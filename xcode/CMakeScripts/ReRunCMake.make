@@ -5,10 +5,10 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/MSD-CS6010/FinalProject/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/3.24.2/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/3.24.2/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/FinalProject/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/FinalProject/xcode/CMakeFiles/3.24.2/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/FinalProject/xcode/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/olivia/FinalProject/xcode/CMakeFiles/3.24.2/CMakeSystem.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake))
@@ -36,5 +36,5 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/SFML
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake))
 
-/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -H/Users/olivia/MSD-CS6010/FinalProject -B/Users/olivia/MSD-CS6010/FinalProject/xcode
+/Users/olivia/FinalProject/xcode/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -H/Users/olivia/FinalProject -B/Users/olivia/FinalProject/xcode

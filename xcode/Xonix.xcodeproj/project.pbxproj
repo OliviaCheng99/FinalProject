@@ -34,6 +34,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4580B9FD28DAEC6B00A66735 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4580B9FC28DAEC6B00A66735 /* main.cpp */; };
 		E47A6D73E6D84A579D711483 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26105C7EEB4942A1898041AF /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26105C7EEB4942A1898041AF /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "/Users/olivia/MSD-CS6010/FinalProject/src/main.cpp"; sourceTree = "<absolute>"; };
+		26105C7EEB4942A1898041AF /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "/Users/olivia/FinalProject/src/main.cpp"; sourceTree = "<absolute>"; };
+		4580B9FC28DAEC6B00A66735 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9370B51AC58F4C97B8645874 /* Xonix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Xonix; sourceTree = BUILT_PRODUCTS_DIR; };
 		983B05B4E4C04B8AB534D0A8 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		9F87AD540EAF43FC9843CC06 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
@@ -105,6 +107,7 @@
 		632AB3DFE1C242F1BF6F8BFB /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				4580B9FC28DAEC6B00A66735 /* main.cpp */,
 				26105C7EEB4942A1898041AF /* main.cpp */,
 			);
 			name = "Source Files";
@@ -174,7 +177,7 @@
 				Base,
 			);
 			mainGroup = 8B1611AC446B4E75A4445223;
-			projectDirPath = "/Users/olivia/MSD-CS6010/FinalProject";
+			projectDirPath = "/Users/olivia/FinalProject";
 			projectRoot = "";
 			targets = (
 				229EEEB6BEA842F5A8A93371 /* ALL_BUILD */,
@@ -195,11 +198,11 @@
 			);
 			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-				"/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/ZERO_CHECK",
+				"/Users/olivia/FinalProject/xcode/CMakeFiles/ZERO_CHECK",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  make -f /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  make -f /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  make -f /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  make -f /Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  make -f /Users/olivia/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  make -f /Users/olivia/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  make -f /Users/olivia/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  make -f /Users/olivia/FinalProject/xcode/CMakeScripts/ReRunCMake.make\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C62A229FE9498C42D0862FF7 /* Generate CMakeFiles/ALL_BUILD */ = {
@@ -212,11 +215,11 @@
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-				"/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/ALL_BUILD",
+				"/Users/olivia/FinalProject/xcode/CMakeFiles/ALL_BUILD",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/olivia/MSD-CS6010/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/olivia/FinalProject/xcode\n  echo Build\\ all\\ projects\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4580B9FD28DAEC6B00A66735 /* main.cpp in Sources */,
 				E47A6D73E6D84A579D711483 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +274,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -321,7 +325,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Xonix;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					"$(inherited)",
@@ -350,7 +354,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -375,7 +379,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -400,7 +404,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -425,7 +429,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -464,7 +468,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Xonix;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					"$(inherited)",
@@ -502,7 +506,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -527,7 +531,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -552,7 +556,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -594,7 +598,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Xonix;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					"$(inherited)",
@@ -658,7 +662,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Xonix;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/olivia/MSD-CS6010/FinalProject/xcode";
+				SYMROOT = "/Users/olivia/FinalProject/xcode";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/opt/homebrew/include,
 					"$(inherited)",

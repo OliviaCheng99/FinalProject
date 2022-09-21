@@ -1,3 +1,3 @@
-/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/Xonix.dir
-/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/olivia/MSD-CS6010/FinalProject/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/olivia/FinalProject/xcode/CMakeFiles/Xonix.dir
+/Users/olivia/FinalProject/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/olivia/FinalProject/xcode/CMakeFiles/ZERO_CHECK.dir
