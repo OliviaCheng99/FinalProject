@@ -1,3 +1,0 @@
-/Users/ricardo2830/FinalProject/FinalProject/xcode/CMakeFiles/FinalProject.dir
-/Users/ricardo2830/FinalProject/FinalProject/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/ricardo2830/FinalProject/FinalProject/xcode/CMakeFiles/ZERO_CHECK.dir
