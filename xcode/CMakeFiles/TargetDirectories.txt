@@ -1,3 +1,0 @@
-/Users/olivia/FinalProject/xcode/CMakeFiles/Xonix.dir
-/Users/olivia/FinalProject/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/olivia/FinalProject/xcode/CMakeFiles/ZERO_CHECK.dir
