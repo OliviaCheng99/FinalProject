@@ -36,7 +36,7 @@ public:
 // Class to create new obstacles
 class Obstacle{
 public:
-    int column, row, MoveInColumn, MoveInRow;
+    int Column, Row, MoveInColumn, MoveInRow;
     Obstacle();
     void move(Gametable& table);
 };

@@ -95,10 +95,10 @@ void Gametable::set(int& row, int& column, int value){
 }
 
 Obstacle::Obstacle(){
-column=300;
-row=300;
-    MoveInColumn=4-rand()%8;
-    MoveInRow=4-rand()%8;
+Column=300;
+Row=300;
+    MoveInColumn=5-rand()%10;
+    MoveInRow=5-rand()%10;
 }
 
 void Obstacle::move(Gametable& table){
@@ -106,19 +106,19 @@ void Obstacle::move(Gametable& table){
     int row;
     int column;
     
-    row+=MoveInColumn;
-    row = row/table.Pixel();
-    column = row/table.Pixel();
+    Column+=MoveInColumn;
+    row = Row/table.Pixel();
+    column = Column/table.Pixel();
     if(table.get(row, column) == 1){
         MoveInColumn=-MoveInColumn;
-        row+=MoveInColumn;
+        Column+=MoveInColumn;
     }
-    row+=MoveInRow;
-    row = row/table.Pixel();
-    column = row/table.Pixel();
+    Row+=MoveInRow;
+    row = Row/table.Pixel();
+    column = Column/table.Pixel();
     if(table.get(row, column) == 1){
         MoveInRow=-MoveInRow;
-        row+=MoveInRow;
+        Row+=MoveInRow;
     }
 }
 
