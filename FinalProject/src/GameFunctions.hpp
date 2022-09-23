@@ -30,8 +30,8 @@ public:
     int Width();
     int Height();
     int Pixel();
-    int get(int &row, int &column);
-    void set(int &row, int &column, int Value);
+    int get(int row, int column);
+    void set(int row, int column, int value);
 };
 
 // Class to create new obstacles

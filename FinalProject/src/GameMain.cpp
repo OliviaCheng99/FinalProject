@@ -48,14 +48,12 @@ int main()
             if (i == 0 || j == 0 || i == Table.Rows() - 1 || j == Table.Columns() - 1)
             {
                 Table.set(i, j, 1);
-                // std::cout << Table.get(i, j)<< " ";
             }
         }
     }
 
     while (window.isOpen())
     {
-
         float time = clock.getElapsedTime().asSeconds();
         clock.restart();
         timer += time;
@@ -140,8 +138,6 @@ int main()
             {
                 row = Table.Rows() - 1;
             }
-            // below can be a check game state function
-            // give table, row, colum -> boolean
             if (Table.get(row, column) == 2)
             {
                 std::cout << "Game end! Cut self" << std::endl;
@@ -228,7 +224,6 @@ int main()
         {
             Sobstacle.setPosition(obs[i].Column, obs[i].Row);
             window.draw(Sobstacle);
-            // std::cout << obs[i].Column << " " << obs[i].row <<"\n";
         }
 
         if (!newgame)

@@ -102,12 +102,12 @@ int Gametable::Pixel()
     return pixel;
 }
 
-int Gametable::get(int &row, int &column)
+int Gametable::get(int row, int column)
 {
     return data[row][column];
 }
 
-void Gametable::set(int &row, int &column, int value)
+void Gametable::set(int row, int column, int value)
 {
     data[row][column] = value;
 }
