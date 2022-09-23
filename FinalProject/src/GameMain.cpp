@@ -37,7 +37,7 @@ int main()
     Obstacle obs[10];
     bool newgame = true;
 
-    float timer = 0, delay = 0;
+    float timer = 0, delay = 0.07;
     sf::Clock clock;
 
     // Filling the game table with a frame of tiles.
@@ -112,12 +112,14 @@ int main()
 
         if (!newgame)
             continue;
-
+        // delay is the wait time between 2 keyboard inputs
+        // if you press -> 2 times within the delay, it will only register as 1 input
+        // delay is in term of rendering
         if (timer > delay)
         {
             column += MoveInColumn;
             row += MoveInRow;
-
+            
             if (column < 0)
             {
                 column = 0;
@@ -134,6 +136,8 @@ int main()
             {
                 row = Table.Rows() - 1;
             }
+            // below can be a check game state function
+            // give table, row, colum -> boolean
             if (Table.get(row, column) == 2)
             {
                 newgame = false;
