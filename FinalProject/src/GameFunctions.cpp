@@ -8,6 +8,7 @@
 #include <iostream>
 #include "GameFunctions.hpp"
 
+// add in addLevel
 Gametable::Gametable(int row, int column)
 {
     rows = row;
