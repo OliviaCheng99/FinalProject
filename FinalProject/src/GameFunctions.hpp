@@ -9,42 +9,14 @@
 #define GameFunctions_hpp
 
 #include <stdio.h>
+#include <iostream>
+#include "GameTable.hpp"
 
-// Clase to create the game table.
-class Gametable
-{
-private:
-    int rows, columns;
-    int **data;
-    const int pixel = 20; // We created images with a size of 20 x 20 pixels to display.
+//Function
 
-public:
-    Gametable(int rows, int columns);
-    ~Gametable();
-    Gametable(const Gametable &rhs);
-
-    Gametable &operator=(const Gametable &rhs);
-
-    int Rows();
-    int Columns();
-    int Width();
-    int Height();
-    int Pixel();
-    int get(int row, int column);
-    void set(int row, int column, int value);
-};
-
-// Class to create new obstacles
-class Obstacle
-{
-public:
-    int Column, Row, MoveInColumn, MoveInRow;
-    Obstacle();
-    void move(Gametable &table);
-};
-
-// Function
-
-void drop(Gametable &table, int row, int column);
+void Startgame(Gametable& table);
+bool CheckTable(Gametable& table);
+void drop(Gametable& table, int row, int column);
+void RestartTable(Gametable& table);
 
 #endif /* GameFunctions_hpp */
