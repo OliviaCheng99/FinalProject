@@ -34,7 +34,7 @@ int main()
     Sobstacle.setOrigin(20, 20);
 
     int NumObstacles = 2;
-    Obstacle obs[10];
+    Obstacle obs[NumObstacles];
     bool newgame = true;
 
     float timer = 0, delay = 0.07;
@@ -111,7 +111,11 @@ int main()
         }
 
         if (!newgame)
-            continue;
+        {
+            std::cout << "Game end!" << std::endl;
+            exit(0);
+//            continue;
+        }
         // delay is the wait time between 2 keyboard inputs
         // if you press -> 2 times within the delay, it will only register as 1 input
         // delay is in term of rendering
@@ -140,6 +144,7 @@ int main()
             // give table, row, colum -> boolean
             if (Table.get(row, column) == 2)
             {
+                std::cout << "Game end! Cut self" << std::endl;
                 newgame = false;
             }
             if (Table.get(row, column) == 0)
@@ -182,9 +187,10 @@ int main()
         for (int i = 0; i < NumObstacles; i++)
         {
             int row = obs[i].Row / Table.Pixel();
-            int column = obs[i].Row / Table.Pixel();
+            int column = obs[i].Column / Table.Pixel();
             if (Table.get(row, column) == 2)
             {
+                std::cout << "Game end! Hit obstacle" << std::endl;
                 newgame = false;
             }
         }
@@ -227,6 +233,7 @@ int main()
 
         if (!newgame)
         {
+            std::cout << "Game end! Draw game over" << std::endl;
             window.draw(Sgameover);
         }
 
