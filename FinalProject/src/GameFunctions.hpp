@@ -16,7 +16,7 @@
 
 void Startgame(Gametable& table);
 bool CheckTable(Gametable& table);
-void drop(Gametable& table, int row, int column);
+void ObstacleSpace(Gametable& table, int row, int column);
 void RestartTable(Gametable& table);
 
 #endif /* GameFunctions_hpp */

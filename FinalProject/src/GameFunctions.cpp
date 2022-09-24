@@ -37,6 +37,7 @@ bool CheckTable(Gametable& table){
          }
      }
     if (counter >= 0.5*table.Size()){ //Next level if player reach complete 50% of the Table.
+        //0.5*table.Size()
         return true;
     }
     return false;
@@ -49,8 +50,9 @@ void RestartTable(Gametable& table){
             }
     }
 }
-
-void drop(Gametable& table, int row, int column){
+//This Function helps to check if all the cells arround the obstacle are empty
+//This will help us to fill the closed espaces we create with the body and head
+void ObstacleSpace(Gametable& table, int row, int column){
         int up = row-1;
         int down = row+1;
         int left = column-1;
@@ -60,16 +62,16 @@ void drop(Gametable& table, int row, int column){
             table.set(row, column, -1);
         }
         if(table.get(up, column) == 0){
-            drop(table, up, column);
+            ObstacleSpace(table, up, column);
         }
         if(table.get(down, column) == 0){
-            drop(table, down, column);
+            ObstacleSpace(table, down, column);
         }
         if(table.get(row, left) == 0){
-            drop(table, row, left);
+            ObstacleSpace(table, row, left);
         }
         if(table.get(row, right) == 0){
-            drop(table, row, right);
+            ObstacleSpace(table, row, right);
         }
     }
 

@@ -35,4 +35,5 @@ void Obstacle::move(Gametable& table){
         MoveInRow=-MoveInRow;
         Row+=MoveInRow;
     }
+    // std::cout<< Column <<" " << Row <<" ";
 }

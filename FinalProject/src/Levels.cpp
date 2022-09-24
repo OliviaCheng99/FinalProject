@@ -12,7 +12,7 @@ void Levels(sf::RenderWindow& window, Gametable& Table, int& NumObstacles, bool&
     Obstacle obs[NumObstacles*10];
     int InNumObstacles = NumObstacles;
     int row = 0, column = 0, MoveInColumn = 0, MoveInRow = 0, Level=1;
-    float timer = 0, delay = 0.07;
+    float timer = 0, delay = 0.08;
     bool NextLevel;
     sf::Clock clock;
     
@@ -69,14 +69,8 @@ void Levels(sf::RenderWindow& window, Gametable& Table, int& NumObstacles, bool&
             {
                 if (event.key.code == sf::Keyboard::N)
                 {
-                    for (int i = 1; i < Table.Rows() - 1; i++)
-                    {
-                        for (int j = 1; j < Table.Columns() - 1; j++)
-                        {
-                            Table.set(i, j, 0);
-                        }
-                    }
-
+                    RestartTable(Table);
+                    Startgame(Table);
                     column = 0;
                     row = 0;
                     NewGame = true;
@@ -109,11 +103,11 @@ void Levels(sf::RenderWindow& window, Gametable& Table, int& NumObstacles, bool&
             MoveInRow = 0;
         }
 
-        if (!NewGame)
+        if (!NewGame){
             // std::cout << "Game end!" << std::endl;
             // exit(0);
             continue;
-      
+        }
         
         // delay is the wait time between 2 keyboard inputs
         // if you press -> 2 times within the delay, it will only register as 1 input
@@ -162,23 +156,24 @@ void Levels(sf::RenderWindow& window, Gametable& Table, int& NumObstacles, bool&
         {
             MoveInRow = 0;
             MoveInColumn = 0;
-
+            //Check the space of obstavcle
             for (int i = 0; i < NumObstacles; i++)
             {
-                drop(Table, obs[i].Row / Table.Pixel(), obs[i].Column / Table.Pixel());
+                ObstacleSpace(Table, obs[i].Row / Table.Pixel(), obs[i].Column / Table.Pixel());
             }
-
+            //Checking cells to fill the close space we create with the body and head with tiles.
+            
             for (int i = 0; i < Table.Rows(); i++)
             {
                 for (int j = 0; j < Table.Columns(); j++)
                 {
-                    if (Table.get(i, j) == -1)
+                    if (Table.get(i, j) == -1) // if the cells contain -1 it is a free space
                     {
-                        Table.set(i, j, 0);
+                        Table.set(i, j, 0); // we set back a cero.
                     }
                     else
                     {
-                        Table.set(i, j, 1);
+                        Table.set(i, j, 1); // fill cell with a tile.
                     }
                 }
             }
